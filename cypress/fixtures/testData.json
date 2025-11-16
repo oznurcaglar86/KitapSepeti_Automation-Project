@@ -1,0 +1,17 @@
+{
+  "payment": {
+    "cardHolderName": "Pınar Yıldırım",
+    "cardNumber": "5528 7900 0000 0008",
+    "expiryDate": "1230",
+    "cvv": "321"
+  },
+  "guestAddress": {
+    "email": "firstest.last@example.com",
+    "fullname": "Aziz Yıldırım",
+    "province": "İstanbul",
+    "district": "Üsküdar",
+    "neighborhood": "ÜNALAN MAH",
+    "address": "Oduncu Cad. Demir Sok. No:9 Daire:12",
+    "phone": "5223334446"
+  }
+} 

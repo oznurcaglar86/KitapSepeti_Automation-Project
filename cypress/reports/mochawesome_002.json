@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-16T15:49:47.223Z",
+    "end": "2025-11-16T15:51:15.482Z",
+    "duration": 88259,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b170d37a-2e50-4cdd-ba6c-d808f89fc753",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ProductDetail.cy.js",
+      "file": "cypress\\e2e\\ProductDetail.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "94c13a5e-0fa0-4ce4-9aec-5f869a475cf9",
+          "title": "US03 - Ürün Detay Sayfasi Görüntüleme ve Sepete Ekleme",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC19 - Ürüne Tiklayip Detay Sayfasina Yönlendirildiğinin Dogrulamasi (Kart üzerindeki Sepete Ekle butonunun islevselligi)",
+              "fullTitle": "US03 - Ürün Detay Sayfasi Görüntüleme ve Sepete Ekleme TC19 - Ürüne Tiklayip Detay Sayfasina Yönlendirildiğinin Dogrulamasi (Kart üzerindeki Sepete Ekle butonunun islevselligi)",
+              "timedOut": null,
+              "duration": 23943,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductDetailPage.default.verifyProductDetailPage(productName);",
+              "err": {},
+              "uuid": "32142612-35fe-4e23-84de-4e60e606e84d",
+              "parentUUID": "94c13a5e-0fa0-4ce4-9aec-5f869a475cf9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC20 - Temel Ürün Bilgileri Arayüz Dogrulamasi",
+              "fullTitle": "US03 - Ürün Detay Sayfasi Görüntüleme ve Sepete Ekleme TC20 - Temel Ürün Bilgileri Arayüz Dogrulamasi",
+              "timedOut": null,
+              "duration": 21404,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('@dynamicPrice').then(dynamicPrice => {\n  _ProductDetailPage.default.verifyProductBasicInfo(productName, productAuthor, productPublisher, dynamicPrice);\n});",
+              "err": {},
+              "uuid": "add942ba-60fa-4eba-a379-6a51dcacff94",
+              "parentUUID": "94c13a5e-0fa0-4ce4-9aec-5f869a475cf9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC21 - \"Ürün Hakkinda Bilgiler\" Bölümü Dogrulamasi",
+              "fullTitle": "US03 - Ürün Detay Sayfasi Görüntüleme ve Sepete Ekleme TC21 - \"Ürün Hakkinda Bilgiler\" Bölümü Dogrulamasi",
+              "timedOut": null,
+              "duration": 20640,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductDetailPage.default.verifyProductDetailedInfo();",
+              "err": {},
+              "uuid": "e1114ec7-92d7-4a30-9a1a-b4deee7a407e",
+              "parentUUID": "94c13a5e-0fa0-4ce4-9aec-5f869a475cf9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC22 - Sepete Ekle Butonunun Islevselligini dogrulamasi",
+              "fullTitle": "US03 - Ürün Detay Sayfasi Görüntüleme ve Sepete Ekleme TC22 - Sepete Ekle Butonunun Islevselligini dogrulamasi",
+              "timedOut": null,
+              "duration": 21940,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductDetailPage.default.getCurrentCartCount().then(initialCount => {\n  const expectedCount = initialCount + 1;\n  _ProductDetailPage.default.clickAddToCartButton();\n  _ProductDetailPage.default.verifySuccessfulAddToCartMessage();\n  _ProductDetailPage.default.closeAddToCartModal();\n  _ProductDetailPage.default.verifyCartIconCount(expectedCount);\n});",
+              "err": {},
+              "uuid": "3f9fb733-d7b7-4e1c-ad39-559b1fc661e7",
+              "parentUUID": "94c13a5e-0fa0-4ce4-9aec-5f869a475cf9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32142612-35fe-4e23-84de-4e60e606e84d",
+            "add942ba-60fa-4eba-a379-6a51dcacff94",
+            "e1114ec7-92d7-4a30-9a1a-b4deee7a407e",
+            "3f9fb733-d7b7-4e1c-ad39-559b1fc661e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 87927,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

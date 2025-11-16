@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-16T15:42:46.069Z",
+    "end": "2025-11-16T15:44:13.631Z",
+    "duration": 87562,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94120aa7-5600-4c42-bbed-b8a6292c58da",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GuestPurchase.cy.js",
+      "file": "cypress\\e2e\\GuestPurchase.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+          "title": "US06 - Misafir Olarak Satın Alma Akışı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC43 - Pozitif: Satın al butonuna tıklayınca '/siparis-uye-giris' sayfasına yönlendirme",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC43 - Pozitif: Satın al butonuna tıklayınca '/siparis-uye-giris' sayfasına yönlendirme",
+              "timedOut": null,
+              "duration": 16499,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.verifyRedirectToLoginPage();",
+              "err": {},
+              "uuid": "09767f7d-5a4a-4510-85f9-03437bf99508",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC44 - Pozitif: Üye olmadan devam et butonunun görünürlüğü",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC44 - Pozitif: Üye olmadan devam et butonunun görünürlüğü",
+              "timedOut": null,
+              "duration": 11469,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.verifyContinueAsGuestButtonVisible();",
+              "err": {},
+              "uuid": "5e3c9bae-03ab-4413-9da5-986fc2cd39dc",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC45 - Pozitif: Üye olmadan devam et seçildiğinde adres formunun görüntülenmesi",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC45 - Pozitif: Üye olmadan devam et seçildiğinde adres formunun görüntülenmesi",
+              "timedOut": null,
+              "duration": 11817,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.clickContinueAsGuestButton();\n_guestPurchasePage.default.verifyAddressPageLoaded();",
+              "err": {},
+              "uuid": "d1d02bd7-15b6-4383-8c20-e6998099a409",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC46 - Pozitif: Adres formu alanlarının doğruluğu",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC46 - Pozitif: Adres formu alanlarının doğruluğu",
+              "timedOut": null,
+              "duration": 9373,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.clickContinueAsGuestButton();\n_guestPurchasePage.default.verifyAddressFormFields();",
+              "err": {},
+              "uuid": "178aa871-90c4-447c-b734-1b79e57011a3",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC47 - Negatif: Zorunlu alan boş bırakıldığında uyarı mesajı görüntülenmesi",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC47 - Negatif: Zorunlu alan boş bırakıldığında uyarı mesajı görüntülenmesi",
+              "timedOut": null,
+              "duration": 17070,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.clickContinueAsGuestButton();\n_guestPurchasePage.default.fillAddressFormWithoutFullName();\n_guestPurchasePage.default.submitAddressForm();\n_guestPurchasePage.default.verifyFullNameErrorVisible();\ncy.url().should(\"include\", \"/order/address\");",
+              "err": {},
+              "uuid": "79b2d19b-6fdf-423a-860e-f88685c07eef",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC48 - Pozitif: Tüm alanlar doldurulduğunda adres kaydı başarılı olmalı",
+              "fullTitle": "US06 - Misafir Olarak Satın Alma Akışı TC48 - Pozitif: Tüm alanlar doldurulduğunda adres kaydı başarılı olmalı",
+              "timedOut": null,
+              "duration": 20529,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_guestPurchasePage.default.addProductFromHomePage();\n_guestPurchasePage.default.clickContinueAsGuestButton();\n_guestPurchasePage.default.fillAddressForm();\n_guestPurchasePage.default.submitAddressForm();\ncy.url().should(\"include\", \"/payment\");",
+              "err": {},
+              "uuid": "a989f1d1-8c96-490f-9fd8-f12cf6aa70b1",
+              "parentUUID": "205e3a2d-2320-48cf-b7da-8de0358278ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "09767f7d-5a4a-4510-85f9-03437bf99508",
+            "5e3c9bae-03ab-4413-9da5-986fc2cd39dc",
+            "d1d02bd7-15b6-4383-8c20-e6998099a409",
+            "178aa871-90c4-447c-b734-1b79e57011a3",
+            "79b2d19b-6fdf-423a-860e-f88685c07eef",
+            "a989f1d1-8c96-490f-9fd8-f12cf6aa70b1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 86757,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

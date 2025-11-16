@@ -1,0 +1,24 @@
+{
+  "name": "kitapsepeti-qa",
+  "version": "1.0.0",
+  "description": "Kitapsepeti QA Automation Project",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:run:login": "cypress run --spec cypress/e2e/Login.cy.js",
+    "report:merge": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged.json",
+    "report:html": "npx marge cypress/reports/merged.json -o cypress/reports/html",
+    "test:report": "npm run cypress:run && npm run report:merge && npm run report:html",
+    "test:login:report": "npm run cypress:run:login && npm run report:merge && npm run report:html"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-real-events": "^1.15.0",
+    "marge": "^1.0.1",
+    "moc": "^0.1.5",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
