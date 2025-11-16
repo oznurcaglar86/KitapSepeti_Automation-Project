@@ -72,7 +72,7 @@ npm run test:ci
 
 📄 Birleşik Mochawesome Raporu
 
-🌐 [Mocha Test Raporu](https://oznurcaglar86.github.io/KitapSepeti_Automation-Project/cypress/reports/html/merged-report.html)  
+🌐 [Mocha Test Raporu](https://oznurcaglar86.github.io/KitapSepeti_Automation-Project/cypress/reports/merged.html)  
 
 Bu projede tüm User Story'lere ait test sonuçları tek bir birleşik HTML raporu altında toplanmaktadır.
 
