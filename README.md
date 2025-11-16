@@ -15,9 +15,15 @@ Bu proje, canlı bir e-ticaret sitesi olan **Kitapsepeti.com** üzerinde temel e
 
 > ⚠️ Not: Canlı sistem üzerinde test yapılacağı için gerçek sipariş oluşturulmamış, sahte kullanıcı verileri kullanılmıştır.
 
+## ✅ Test Kapsamı
+
+* Pozitif ve negatif senaryolar her User Story için yazılmıştır.
+* Testler, ürün fiyat ve isimlerini sayfadan dinamik olarak okumaktadır.
+* Gerçek kullanıcı ve sipariş bilgileri kullanılmamıştır.
+
 ## 📑 Test Senaryoları Dokümanı
 
-User Story ve kabul kriterleri ile eşleşen test senaryoları [[KitapSepetiAutomationProject](https://docs.google.com/spreadsheets/d/169_lRITHO6gTBtGGJF4SMQtzwywgMll_Os456b_6o1Y/edit?usp=sharing)] üzerinden erişilebilir.
+User Story ve kabul kriterleri ile eşleşen test senaryoları [KitapSepetiAutomationProject](https://docs.google.com/spreadsheets/d/169_lRITHO6gTBtGGJF4SMQtzwywgMll_Os456b_6o1Y/edit?usp=sharing) üzerinden erişilebilir.
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -61,11 +67,26 @@ npm run test:ci
 
 > ℹ️ Not: `test:ci` script’i tüm testleri çalıştırır, screenshot ve video üretir, Mochawesome raporu oluşturur.
 
-## ✅ Test Kapsamı
 
-* Pozitif ve negatif senaryolar her User Story için yazılmıştır.
-* Testler, ürün fiyat ve isimlerini sayfadan dinamik olarak okumaktadır.
-* Gerçek kullanıcı ve sipariş bilgileri kullanılmamıştır.
+📊 Test Raporları
+
+📄 Birleşik Mochawesome Raporu
+
+🌐 [Mocha Test Raporu]()  
+
+Bu projede tüm User Story'lere ait test sonuçları tek bir birleşik HTML raporu altında toplanmaktadır.
+
+Rapor içerisinde aşağıdaki bilgiler detaylı şekilde sunulur:
+
+🔎 Her testin senaryo açıklaması ve ilgili User Story bağlantısı
+
+🟢 Passed, 🔴 Failed, ⚪ Skipped test durumları
+
+📷 Hata anında otomatik alınan screenshot’lar
+
+📝 Adım adım test yürütme log’ları
+
+⏱️ Test süresi, toplam koşu sayısı ve özet performans bilgileri
 
 ## 🏗️ CI / GitHub Actions
 
